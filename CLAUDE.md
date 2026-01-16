@@ -155,6 +155,9 @@ Anonymous work tracked in `sessionStorage` ([src/lib/anon-work-tracker.ts](src/l
 
 ## Important Development Notes
 
+### Code Style
+- Use comments sparingly. Only comment complex code.
+
 ### Path Aliases
 - `@/*` maps to `src/*` (configured in [tsconfig.json](tsconfig.json))
 - Use `@/` prefix for all imports from `src/`
