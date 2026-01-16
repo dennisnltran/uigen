@@ -163,10 +163,11 @@ Anonymous work tracked in `sessionStorage` ([src/lib/anon-work-tracker.ts](src/l
 - Use `@/` prefix for all imports from `src/`
 
 ### Prisma Workflow
-1. Modify [prisma/schema.prisma](prisma/schema.prisma)
-2. Run `npx prisma migrate dev --name description_of_change`
-3. Prisma client auto-regenerates to `src/generated/prisma`
-4. Import via `import { prisma } from '@/lib/prisma'`
+1. **Reference schema**: [prisma/schema.prisma](prisma/schema.prisma) defines the database structure - reference this file anytime you need to understand the structure of data stored in the database
+2. Modify [prisma/schema.prisma](prisma/schema.prisma)
+3. Run `npx prisma migrate dev --name description_of_change`
+4. Prisma client auto-regenerates to `src/generated/prisma`
+5. Import via `import { prisma } from '@/lib/prisma'`
 
 ### Mock Provider (No API Key)
 - When `ANTHROPIC_API_KEY` is missing, app uses mock provider
